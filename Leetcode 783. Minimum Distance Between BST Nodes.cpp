@@ -9,7 +9,7 @@ public:
         temp.push_back(root->val);
         inorder(root->right);
     }
-    int getMinimumDifference(TreeNode* root) {
+    int minDiffInBST(TreeNode* root) {
         inorder(root);
         int n=temp.size();
         for(int i=0;i<n-1;i++){
